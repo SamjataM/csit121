@@ -1,0 +1,52 @@
+/* recipe.css */
+
+/* Body styles */
+body {
+     background-color: #ff0000; /* Red background */
+    color: #8B0000; /* Dark Red text color */
+    font-family: Arial, sans-serif;
+    margin: 10px; /* Set equal margins for all sides */
+    text-transform: none;
+}
+
+/* Header styles */
+h1 {
+    font-size: 36px; /* normal font size */
+    text-align: center;/* put center text-alignthe heading */
+    margin: 20px 0; /*top right */
+}
+
+h2 {
+    font-size: 36px; */ make it to normal size */ 
+    text-align: center;
+    margin: 10px 0; /* top right */
+}
+
+/* Section title styles */
+    font-size: 36px; /* normal font size */
+    font-weight: bold; /* make all section title style bold*/ 
+}
+
+/* List styles */
+
+p {
+    margin-bottom: 10px;
+    color: #8B0000; /* Dark Red text color */
+    text-align: center; /* center-align paragraphs */
+}
+
+/* Paragraph styles */
+    margin: 10px; 
+    color: #8B0000; /* Dark Red text color */
+    text-align: center; /* put in a center* */ 
+}
+
+/* Link styles */
+a {
+    color: #008000; /* Green color */
+    text-decoration:none; /* Remove underlines from links */ 
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover (optional) */
+}
