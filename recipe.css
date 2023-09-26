@@ -1,0 +1,56 @@
+/* recipe.css */
+
+/* Body styles */
+body {
+    background-color: #ff0000; /* Red background */
+    color: #8B0000; /* Dark Red text color */
+    font-family: Arial, sans-serif;
+    margin: 10px; /* Set equal margins for all sides */
+    text-transform: none;
+}
+
+/* Header styles */
+h1 {
+    font-size: 36px; /* Normal font size */
+    text-align: center; /* Center align the heading */
+    margin: 20px 0; /* Add margin to the top and bottom */
+}
+
+h2 {
+    font-size: 24px; /* Reduce the font size */
+    text-align: center;
+    margin: 10px 0; /* Add margin to the top and bottom */
+}
+
+/* Section title styles */
+.image-container {
+    background-image: url('https://live.staticflickr.com/3828/8888551938_cd2515d324_b.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* List styles */
+ul, ol {
+    margin-bottom: 10px;
+    color: #8B0000; /* Dark Red text color */
+    text-align: center; /* Center-align lists */
+}
+
+/* Paragraph styles */
+p {
+    margin: 10px; 
+    color: #8B0000; /* Dark Red text color */
+    text-align: center; /* Center-align paragraphs */
+}
+
+/* Link styles */
+a {
+    color: #008000; /* Green color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover (optional) */
+}
