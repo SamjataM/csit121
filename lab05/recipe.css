@@ -1,0 +1,44 @@
+/* recipe.css */
+
+/* recipe.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container with 80% width */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex; /* Use flexbox to break the normal flow */
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 20px;
+}
+
+/* Left content styles */
+.left-content {
+    flex: 1; /* Takes up available space */
+    padding: 10px;
+    background-color: #ffffff; /* Set your desired left content background color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Right content styles */
+.right-content {
+    flex: 1; /* Takes up available space */
+    padding: 10px;
+    background-color: #ffffff; /* Set your desired right content background color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Link styles with pseudo-classes */
+a {
+    color: #008000; /* Green color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
