@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+/* Style for the active link */
+section nav ul li a:target {
+    color: #fac031;
+    font-weight: bold;
+}
+
+/* Style for the other links */
+section nav ul li a {
+    /* ... other styles ... */
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+section nav ul li a:hover {
+    color: #fac031;
+}
+
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+section nav ul li a:hover {
+    color: #fac031;
+}
+
+section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover {
+    color: #fac031;
+}
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h1 {
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+section .main .men_text h1 span {
+    margin-left: 15px;
+    color: #fac031;
+    font-family: 'mv boli';
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img {
+    width: 700px;
+    position: relative;
+    left: 70px;
+}
+
+section p {
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 120px;
+    line-height: 22px;
+}
+
+section .main_btn {
+    background: #fac031;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a {
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i {
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i {
+    transform: translateX(7px);
+}
+
+/* Style the About Us section */
+.about {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the Our Staff section */
+.staff {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style each staff member */
+.staff-member {
+    width: 30%; /* Adjust the width as needed for your design */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.staff-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.staff-member h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.staff-member p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .staff-member {
+        width: 100%; /* Adjust for smaller screens */
+    }
+}
+
+.external-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.external-links li {
+    margin-bottom: 10px;
+}
+
+.external-links a {
+    text-decoration: none;
+    color: #4CAF50; /* You can change the color as per your design */
+    font-weight: bold;
+}
+
+.external-links a:hover {
+    text-decoration: underline;
+}
+
+
+/*Menu*/
+
+/* Style the Menu Section */
+.menu {
+    width: 100%;
+    padding: 70px 0;
+    background-color: #f9f9f9; /* Add a background color for better contrast */
+}
+
+.menu h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #333; /* Set the text color */
+}
+
+.menu h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+
+.menu_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu_card {
+    width: 45%; /* Adjust the width of each menu card */
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu_card:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu_image {
+    width: 70%; /* Set the width of the menu image to 75% */
+    overflow: hidden;
+}
+
+.menu_image img {
+    width: 100%;
+    height: auto;
+
+}
+    .menu_image {
+    width: 75%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_image img {
+    width: 100%;
+    height: auto;
+}
+
+}
+
+.menu_info {
+    padding: 20px;
+}
+
+.menu_info h2 {
+    font-size: 24px;
+    color: #333; /* Set the text color */
+    margin-bottom: 10px;
+}
+
+.menu_info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Set the text color */
+    margin-bottom: 15px;
+}
+
+.menu_info h3 {
+    font-size: 20px;
+    color: #fac031;
+    margin-bottom: 10px;
+}
+
+.menu_icon {
+    display: flex;
+    color: #fac031;
+}
+
+.menu_icon i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.menu_btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fac031;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu_btn:hover {
+    background-color: #e0a800; /* Darker shade on hover */
+}
+
+
+.menu {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.menu h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background
+
+}
+
+/* table */
+
+.menu_table {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+    /* Review Section */
+
+.review_profile img {
+    width: 50%; /* Set the width to 50% to make the images half their original size */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.review {
+    width: 100%;
+    padding: 70px 0;
+    background-color: #f5f5f5;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.review_box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to the items during scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.review_card {
+    flex: 0 0 auto; /* Don't grow or shrink items */
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    scroll-snap-align: start; /* Align items to the start of the scroll container */
+}
+
+.review_card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(0); /* End at the normal position */
+    }
+}
+
+.review_card {
+    animation: slideFromRight 0.5s ease-out; /* Apply the animation */
+}
+
+.footer_tag {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.footer_tag h2 {
+    display: none; /* You can adjust this if you want to hide the "Quick Link" heading */
+}
+
+.footer_tag p {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer_tag i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.footer_tag {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #333; /* Add your desired background color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer_tag h2 {
+    display: none; /* You can adjust this if you want to hide the "Quick Link" heading */
+}
+
+.footer_tag p {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff; /* Set the text color to white or a contrasting color */
+}
+
+.footer_tag i {
+    display: block; /* Display the icons as blocks for a vertical layout */
+    font-size: 24px;
+    margin-bottom: 10px; /* Add some spacing between icons */
+    color: #fff; /* Set the icon color to white or a contrasting color */
+}
+/* list */
+
+.customer_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.customer_list li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4CAF50; /* You can change the color as per your design */
+}
+
+/* Order Section */
+
+.order {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.order h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.order h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+
+.order_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.order_content {
+    flex: 1;
+    max-width: 60%; /* Adjust the width as needed */
+}
+
+.order_image {
+    flex: 1;
+}
+
+.order_image img {
+    width: 40%; /* Adjust the image width as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.order_btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fac031;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    /* Add more styles as needed */
+}
+
+.order_btn:hover {
+    background-color: #e0a800;
+}
